@@ -3,13 +3,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>登録されたユーザー</title>
+<title>名前と食べ物</title>
 </head>
 <body>
-    <h1>登録されたユーザー</h1>
+    <h1>名前と好きな食べ物を入力してください。</h1>
     <table border="1">
-        <tr><th>ユーザー名</th><th>パスワード</th></tr>
-        <tr><td>${name}</td><td>${pass}</td></tr>
+        <tr><th>名前</th><th>食べ物</th></tr>
+        <tr><td>${name}</td><td>${food}</td></tr>
     </table>
 </body>
 </html>
