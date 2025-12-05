@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>ユーザー登録</h1>
-    <form method="post" action="./registtest">
+    <form method="post" action="./sregisttest">
         ユーザー名<input type="text" name="name"><br>
         好きな食べ物<input type="text" name="food"><br>
         <input type="submit" value="登録" />
