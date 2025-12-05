@@ -1,14 +1,15 @@
-<%@ page contentType="text/html"; charset=utf-8" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8">
+<head>    
+<meta charset="UTF-8">
 <title>ユーザー登録</title>
 </head>
 <body>
     <h1>ユーザー登録</h1>
     <form method="post" action="./registtest">
         ユーザー名<input type="text" name="name"><br>
-        パスワード<input type="text" name="pass"><br>
+        好きな食べ物<input type="text" name="food"><br>
         <input type="submit" value="登録" />
     </form>
 </body>

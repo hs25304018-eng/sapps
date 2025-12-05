@@ -6,7 +6,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-public class RegistTestServlet extends HttpServlet {
+public class SRegistTestServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
@@ -14,13 +14,13 @@ public class RegistTestServlet extends HttpServlet {
         req.setCharacterEncoding("utf-8");
 
         String username = req.getParameter("name");
-        String password = req.getParameter("pass");
+        String food = req.getParameter("food");
 
         req.setAttribute("name", username);
-        req.setAttribute("pass", password);
+        req.setAttribute("food", food);
 
         RequestDispatcher dispatcher =
-                req.getRequestDispatcher("registresult");
+                req.getRequestDispatcher("sregistresult");
 
         dispatcher.forward(req, res);
     }
