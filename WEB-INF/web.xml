@@ -1,75 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
-    <!-- サーブレットの登録 -->
-    <servlet>
-        <!-- サーブレット名を hello として登録する -->
-        <servlet-name>hello</servlet-name>
-        <!-- サーブレットクラスは HelloServlet（拡張子は付けない） -->
-        <servlet-class>HelloServlet</servlet-class>
-    </servlet>
-
-    <!-- URLとサーブレットの対応付け -->
-    <servlet-mapping>
-        <!-- 上で登録した hello というサーブレット名を指定する -->
-        <servlet-name>hello</servlet-name>
-        <!-- /hello というパスにアクセスしたとき、helloサーブレットを実行する -->
-        <url-pattern>/hello</url-pattern>
-    </servlet-mapping>
-
-       <!-- サーブレットの登録 -->
-    <servlet>
-        <!-- サーブレット名を hello として登録する -->
-        <servlet-name>ByeBye</servlet-name>
-        <!-- サーブレットクラスは HelloServlet（拡張子は付けない） -->
-        <servlet-class>ByeByeServlet</servlet-class>
-    </servlet>
-
-    <!-- URLとサーブレットの対応付け -->
-    <servlet-mapping>
-        <!-- 上で登録した hello というサーブレット名を指定する -->
-        <servlet-name>ByeBye</servlet-name>
-        <!-- /hello というパスにアクセスしたとき、helloサーブレットを実行する -->
-        <url-pattern>/ByeBye</url-pattern>
-    </servlet-mapping>
-
       <servlet>
-        <servlet-name>my_name</servlet-name>
-        <servlet-class>MyName</servlet-class>
+        <servlet-name>sregist</servlet-name>
+        <servlet-class>SRegistTestServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>my_name</servlet-name>
-        <url-pattern>/MyName</url-pattern>
+        <servlet-name>sregist</servlet-name>
+        <url-pattern>/sregist</url-pattern>
     </servlet-mapping>
-
-      <servlet>
-        <servlet-name>request_recv</servlet-name>
-        <servlet-class>RequestRecv</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>request_recv</servlet-name>
-        <url-pattern>/RequestRecv</url-pattern>
-    </servlet-mapping>
-
-       <servlet>
-        <servlet-name>time</servlet-name>
-        <jsp-file>/CurrentTime.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>time</servlet-name>
-        <url-pattern>/CurrentTime</url-pattern>
-    </servlet-mapping>
-
-      <servlet>
-        <servlet-name>counter</servlet-name>
-        <servlet-class>Counter</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>counter</servlet-name>
-        <url-pattern>/Counter</url-pattern>
-    </servlet-mapping>
-
 </web-app>
